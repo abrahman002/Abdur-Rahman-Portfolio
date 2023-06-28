@@ -5,8 +5,9 @@ import { AiOutlineMail, AiFillLinkedin, AiOutlineGithub, AiOutlineTwitter } from
 const Navber = () => {
 
     const menuBar = <>
-        <li><Link>Home</Link></li>
+        <li><Link to='/'>Home</Link></li>
         <li><Link to=''>Contact</Link></li>
+        <li><Link to=''>About</Link></li>
         <li><Link to=''>Git</Link></li>
 
 
