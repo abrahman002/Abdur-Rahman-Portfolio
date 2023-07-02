@@ -1,8 +1,21 @@
 import React from 'react';
 import { useGlitch } from 'react-powerglitch'
+import resumeFile from '../../../assets/Frontend Developer Resume Of Abdur Rahman.pdf';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     const glitch = useGlitch();
+    const handleDownloadResume = () => {
+        // Create a virtual link element
+        const link = document.createElement('a');
+        link.href = resumeFile;
+        link.download = 'Frontend Developer Resume Of Abdur Rahman.pdf';
+
+        // Dispatch a click event to initiate the download
+        link.dispatchEvent(new MouseEvent('click'));
+
+       
+    }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200 lg:p-20">
@@ -14,8 +27,8 @@ const Banner = () => {
                         <p className="mb-14 text-gray-400">Front-End Web Developer with knowledge of ReactJs, NextJs, Typescript, ExpressJs, Node, MongoDB. Also has experience with developing backend APIs using Node web frameworks.</p>
                         <div className='flex items-center'>
 
-                            <button className="border-b-orange-300 lg:mr-10 mr-5 uppercase text-base flex items-center ">  <img src="https://i.ibb.co/rpQ7kNw/icons8-installing-updates.gif" className='w-6 rounded mr-2' alt="" />Download Resume</button>
-                            <button className=" uppercase text-base  border-b-red-200">Let's Chat</button>
+                            <button onClick={handleDownloadResume} className="border-b-orange-300 lg:mr-10 mr-5 uppercase text-base flex items-center ">  <img src="https://i.ibb.co/rpQ7kNw/icons8-installing-updates.gif" className='w-6 rounded mr-2' alt="" />Download Resume</button>
+                            <button className=" uppercase text-base  border-b-red-200"><Link to='/contact'>Let's Chat</Link></button>
                         </div>
 
                     </div>

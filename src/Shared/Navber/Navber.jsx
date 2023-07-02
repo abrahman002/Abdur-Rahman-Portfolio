@@ -6,9 +6,9 @@ const Navber = () => {
 
     const menuBar = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to=''>Contact</Link></li>
-        <li><Link to=''>About</Link></li>
-        <li><Link to=''>Git</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
+        <li><Link to='/about'>About</Link></li>
+       
 
 
     </>
@@ -32,10 +32,10 @@ const Navber = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link className='mr-5' title='Twitter' ><AiOutlineTwitter /></Link>
+                    <Link className='mr-5' title='Twitter' to='https://twitter.com/Abrahman002' ><AiOutlineTwitter /></Link>
                     <Link className='mr-5' title='Github' to='https://github.com/abrahman002'><AiOutlineGithub /></Link>
                     <Link className='mr-5' title='Linkedin' to='https://www.linkedin.com/in/abrahman002/'><AiFillLinkedin /></Link>
-                    <Link title='Mail' ><AiOutlineMail /></Link>
+                    <Link title='Mail' to='mailto:rahmanx661@gmail.com'><AiOutlineMail /></Link>
                 </div>
             </div>
         </div>
