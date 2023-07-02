@@ -21,7 +21,7 @@ const About = () => {
 
                     Then I thought I should become a computer engineer.  I have always wanted to get a computer.  I wanted to work in big companies.Then the diploma ends.<br />
                     <br />
-                    Then I started learning HTML, CSS. And I made my first web page. That was the beginning and now I' a junior font-end web developer .</p>
+                    Then I started learning HTML, CSS. And I made my first web page. That was the beginning and now I' a junior front-end web developer .</p>
             </div>
         </div>
     );
